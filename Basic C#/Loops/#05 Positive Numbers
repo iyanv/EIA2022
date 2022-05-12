@@ -1,0 +1,43 @@
+// Identify positive numbers of a sequence using while - UnMajete, 2022
+
+    public int[] number = new int[10];
+    private int i = 0;
+    
+    void Start()
+    {
+        Debug.Log("Positive numbers are:");
+        PositiveNegative();
+    }
+ 
+    void PositiveNegative()
+    {
+        while (i < 9)
+        {
+            ++i;
+            if (number[i] > 0)
+            {
+                Debug.Log(number[i]);
+            }
+        }
+    }
+    
+// Identify positive numbers of a sequence using for
+
+    public int[] number = new int[10];
+    private int i = 0;
+    void Start()
+    {
+        Debug.Log("Positive numbers are:");
+        PositiveNegative();
+    }
+ 
+    void PositiveNegative()
+    {
+        for (i = 0; i < 10; i++)
+        {
+            if (number[i] > 0)
+            {
+                Debug.Log(number[i]);
+            }
+        }
+    }
