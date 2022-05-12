@@ -1,0 +1,22 @@
+// Even or odd - UnMajete, 2022
+{
+    public int number;
+    
+    void Start()
+    {
+        NumberCondition();
+    }
+ 
+    void NumberCondition()
+    {
+        if (number % 2 == 0)
+        {
+            Debug.Log("The number is even");
+        }
+        else
+        {
+            Debug.Log("The number is odd");
+        }
+        
+    }
+}
