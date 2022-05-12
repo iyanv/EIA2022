@@ -1,0 +1,16 @@
+// Random Number Generator - UnMajete 2022
+{
+    // Change the max range from Unity's interface
+    public int n = 10; 
+    
+    void Start()
+    {
+        RandomNum();
+    }
+    
+    void RandomNum()
+    {
+        int rNumber = Random.Range(0, n);
+        Debug.Log("The random number is "+rNumber);
+    }
+}
