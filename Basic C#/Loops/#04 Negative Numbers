@@ -1,0 +1,43 @@
+// Detect negative numbers of a sequence using for - UnMajete, 2022
+
+    public int[] number = new int[10];
+    private int i = 0;
+    
+    void Start()
+    {
+        Debug.Log("Negative numbers are:");
+        PositiveNegative();
+    }
+
+    void PositiveNegative()
+    {
+        for (i = 0; i < 10; i++) // Could use vector array.Length instead 
+        {
+            if (number[i] < 0)
+            {
+                Debug.Log(number[i]);
+            }
+        }
+    }
+    
+// Detect negative numbers of a sequence using while
+
+    public int[] number = new int[10];
+    private int i = 0;
+    void Start()
+    {
+        Debug.Log("Negative numbers are:");
+        PositiveNegative();
+    }
+ 
+    void PositiveNegative()
+    {
+        while (i < 9)
+        {
+            ++i;
+            if (number[i] < 0)
+            {
+                Debug.Log(number[i]);
+            }
+        }
+    }
