@@ -1,0 +1,46 @@
+// Today is... 
+{
+    public int dayNumber;
+ 
+    // Start is called before the first frame update
+    void Start()
+    {
+        TodayIs();
+    }
+ 
+    void TodayIs()
+    {
+        if (dayNumber == 1)
+        {
+            Debug.Log("Today is Monday");
+        }
+        else if (dayNumber == 2)
+        {
+            Debug.Log("Today is Tuesday");
+        }
+        else if (dayNumber == 3)
+        {
+            Debug.Log("Today is Wednesday");
+        }
+        else if (dayNumber == 4)
+        {
+            Debug.Log("Today is Thursday");
+        }
+        else if (dayNumber == 5)
+        {
+            Debug.Log("Today is Friday");
+        }
+        else if (dayNumber == 6)
+        {
+            Debug.Log("Today is Saturday");
+        }
+        else if (dayNumber == 7)
+        {
+            Debug.Log("Today is Sunday");
+        }
+        else
+        {
+            Debug.Log("Don't try to fool me!");
+        }
+    }
+}
