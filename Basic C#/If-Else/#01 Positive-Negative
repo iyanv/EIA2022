@@ -1,0 +1,22 @@
+// Choose a number in order to know if it is positive or negative - UnMajete, 2022
+
+{
+    public int number;
+
+    void Start()
+    {
+        NumberCondition();
+    }
+ 
+    void NumberCondition()
+    {
+        if (number < 0)
+        {
+            Debug.Log("The number is negative");
+        }
+        else
+        {
+            Debug.Log("The number is positive");
+        }
+    }
+}
