@@ -1,0 +1,26 @@
+    // Taximeter: 40€ basic fee + 2€/min after first 30min - UnMajete 2022.
+   
+    // Ride time in minutes. 
+    
+    public int rideTime;
+        
+    void Start()
+    {
+        Debug.Log("It was "+DebtMoney()+"€ for a "+rideTime+"min ride.");
+    }
+    
+    // Apply the fees based on travel time
+    
+    int DebtMoney()
+    {
+        int result = 0;
+        if (rideTime > 30)
+        {
+            result = 40 + ((rideTime - 30) * 2);
+        }
+        else
+        {
+            result = 40;
+        }
+        return result;
+    }
