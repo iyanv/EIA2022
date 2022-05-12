@@ -1,0 +1,29 @@
+// Increasing detector
+
+{
+    public int first,
+               second,
+               third;
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+       IncreasingDetector();
+    }
+ 
+    void IncreasingDetector()
+    {
+        if (first >= second && second >= third)
+        {
+            Debug.Log("The numbers are decreasing!");
+        }
+        else if (first <= second && second <= third)
+        {
+            Debug.Log("The numbers are increasing!");
+        }
+        else
+        {
+            Debug.Log("What a mess, huh?");
+        }
+    }
+}
