@@ -1,0 +1,28 @@
+// First and second number - UnMajete, 2022
+
+{
+    public int number,
+              number2;
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+        NumberCondition();
+    }
+ 
+    void NumberCondition()
+    {
+        if (number < number2)
+        {
+            Debug.Log("First goes "+number+" then "+number2);
+        }
+        if (number == number2)
+        {
+            Debug.Log("We have a tie!");
+        }
+        else
+        {
+            Debug.Log("First goes "+number2+" then "+number);
+        }
+    }
+}
