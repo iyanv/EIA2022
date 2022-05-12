@@ -1,0 +1,32 @@
+// Counts from 0 to N using while - UnMajete, 2022
+
+    private int n = 0;
+    public int number;
+    void Start()
+    {
+        LetsCount();
+    }
+ 
+    void LetsCount()
+    {
+        while (n < number)
+        {
+            Debug.Log(++n);
+        }
+    }
+    
+// Counts from 0 to N using for
+
+    public int number;
+    void Start()
+    {
+        PreviousNumbers();
+    }
+ 
+    void PreviousNumbers()
+    {
+        for (int n = 0; n <= number; ++n)
+        {
+            Debug.Log(n);
+        }
+    }
