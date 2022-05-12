@@ -1,0 +1,30 @@
+// Debug 100 first numbers in decreasing order using while - UnMajete, 2022
+
+    private int n = 101;
+    void Start()
+    {
+        hundredNumbers();
+    }
+ 
+    void hundredNumbers()
+    {
+        while (n > 0)
+        {
+            Debug.Log(--n);
+        }
+    }
+    
+// Debug 100 first numbers in decreasing order using for - UnMajete, 2022
+
+    void Start()
+    {
+        hundredNumbers();
+    }
+ 
+    void hundredNumbers()
+    {
+        for (int n = 100; n >= 0; --n)
+        {
+            Debug.Log(n);
+        }
+    }
