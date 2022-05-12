@@ -1,0 +1,26 @@
+    // Cylinder Calculator - UnMajete 2022.
+   
+    // Initial Variables 
+    float radius = 4f,
+          height = 8f;
+    
+    void Start()
+    {
+        CylinderParameters();
+    }
+    
+    void CylinderParameters()
+    {
+        // Cylinder's volume
+    float cover = Mathf.PI * Mathf.Pow(radius, 2); 
+    float  volume = cover * height; 
+        
+         // Cylinder's area
+    float rectangle = (2 * Mathf.PI * radius) * height;
+    float area = rectangle + (2 * cover);
+ 
+        // Results
+    Debug.Log("For a Cylinder with " + height + "cm height and " + radius + "cm radius:");
+    Debug.Log("Area= " + area + "cm2.");
+    Debug.Log("Volume= " + volume + "cm3.");
+    }
