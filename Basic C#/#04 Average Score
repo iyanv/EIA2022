@@ -1,0 +1,19 @@
+// Average Score - UnMajete, 2022
+{
+    public string name;
+    public int theoryScore, practiceScore;
+    
+    void Start()
+    {
+       AverageScore();
+    }
+ 
+    void AverageScore()
+    {
+        int finalScore;
+ 
+        finalScore = ((theoryScore * 70) / 100) + ((practiceScore * 30) / 100);
+        
+        Debug.Log("The average score for "+name+" is "+finalScore);
+    }
+}
