@@ -1,0 +1,22 @@
+// Vowel Detector - UnMajete, 2022
+{
+    public char alphabet;
+ 
+    // Start is called before the first frame update
+    void Start()
+    {
+        VowelDetector();
+    }
+ 
+    void VowelDetector()
+    {
+        if (alphabet == 'a' || alphabet == 'e' || alphabet == 'i' || alphabet == 'o' || alphabet == 'u')
+        {
+            Debug.Log("It is vowel");
+        }
+        else
+        {
+            Debug.Log("It is not vowel");
+        }
+    }
+}
