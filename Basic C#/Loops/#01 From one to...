@@ -1,0 +1,34 @@
+// Debug the numbers from n to 100 using while - UnMajete, 2022 
+    
+    private int n = 0;
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+        hundredNumbers();
+    }
+ 
+    void hundredNumbers()
+    {
+        while (n < 100)
+        {
+            Debug.Log(++n);
+        }
+    }
+    
+    
+// Debug the numbers from n to 100 using for - UnMajete, 2022
+    
+        void Start()
+    {
+        hundredNumbers();
+    }
+ 
+    void hundredNumbers()
+    {
+        for (int n = 0; n <= 100; ++n)
+        {
+            Debug.Log(n);
+        }
+    }
+    
