@@ -1,0 +1,44 @@
+// The Podium - UnMajete, 2022
+{
+    public int first,
+               second,
+               third;
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+       Podium();
+    }
+ 
+    void Podium()
+    {
+        if(first >= second && second >= third)
+        {
+            Debug.Log(first+" "+second+" "+third);
+        }
+        else if (first >= third && third >= second)
+        {
+            Debug.Log(first+" "+third+" "+second);
+        }
+        else if (second >= first && first >= third)
+        {
+            Debug.Log(second+" "+first+" "+third);
+        }
+        else if (second >= third && third >= first)
+        {
+            Debug.Log(second+" "+third+" "+first);
+        }
+        else if (third >= first && first >= second)
+        {
+            Debug.Log(third+" "+first+" "+second);
+        }
+        else if (third >= second && second >= first)
+        {
+            Debug.Log(third+" "+second+" "+first);
+        }
+        else
+        {
+            Debug.Log("Oops! Something went wrong :/");
+        }
+    }
+}
