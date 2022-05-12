@@ -1,0 +1,66 @@
+// Month Detector - UnMajete, 2022
+{
+    public int monthNumber;
+ 
+    // Start is called before the first frame update
+    void Start()
+    {
+       MonthDetector();
+    }
+ 
+    void MonthDetector()
+    {
+        if (monthNumber == 1)
+        {
+            Debug.Log("Jan");
+        }
+        else if (monthNumber == 2)
+        {
+            Debug.Log("Feb");
+        }
+        else if (monthNumber == 3)
+        {
+            Debug.Log("Mar");
+        }
+        else if (monthNumber == 4)
+        {
+            Debug.Log("Apr");
+        }
+        else if (monthNumber == 5)
+        {
+            Debug.Log("May");
+        }
+        else if (monthNumber == 6)
+        {
+            Debug.Log("Jun");
+        }
+        else if (monthNumber == 7)
+        {
+            Debug.Log("Jul");
+        }
+        else if (monthNumber == 8)
+        {
+            Debug.Log("Aug");
+        }
+        else if (monthNumber == 9)
+        {
+            Debug.Log("Sep");
+        }
+        else if (monthNumber == 10)
+        {
+            Debug.Log("Oct");
+        }
+        else if (monthNumber == 11)
+        {
+            Debug.Log("Nov");
+        }
+        else if (monthNumber == 12)
+        {
+            Debug.Log("Dec");
+        }
+        else
+        {
+            Debug.Log("Don't try to fool me!");
+        }
+    }
+}
