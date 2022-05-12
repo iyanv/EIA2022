@@ -1,0 +1,28 @@
+ // Higher Number - UnMajete, 2022
+ 
+ public int numberOne, numberTwo, numberThree;
+    
+    void Start()
+    {
+        Debug.Log("The higher number is "+HigherValue());
+    }
+    
+    // Higher value logic
+    int HigherValue()
+    {
+        int result = 0;
+ 
+        if (numberOne >= numberTwo && numberTwo >= numberThree)
+        {
+            result = numberOne;
+        }
+        else if (numberTwo >= numberOne && numberOne >= numberThree)
+        {
+            result = numberTwo;
+        }
+        else
+        {
+            result = numberThree;
+        }
+        return result;
+    }
