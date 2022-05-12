@@ -1,0 +1,25 @@
+// Rectangle Calculator > UnMajete 2022
+    
+    int width = 2,
+        length = 5;
+    
+    void Start()
+    {
+        RectangleCalculation();        
+    }
+    
+   // Get area and perimeter
+   void RectangleCalculation()
+    {
+    int area = width * length,
+        perimeter = (2 * width) + (2 * length);
+    
+    // Get diagonal
+    double squared = Math.Pow(width, 2) + Math.Pow(length, 2),
+        diagonal = Math.Sqrt(squared);
+        
+    Debug.Log("A rectangle with "+length+"cm length and "+width+"cm width will have:");
+    Debug.Log("A "+perimeter+"cm perimeter.");
+    Debug.Log("A "+diagonal+"cm diagonal.");
+    Debug.Log("A "+area+"cm2 total area.");
+    }
